@@ -8,6 +8,8 @@
   --rule-soft: #e7e9ec;
   --max-width: 860px;
   --name-size: clamp(2rem, 4vw, 2.6rem);
+  --font-body: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: "Newsreader", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -22,9 +24,18 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   color: var(--ink);
   background: var(--page);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 a {
@@ -56,7 +67,7 @@ p {
   margin-bottom: 14px;
   color: var(--ink);
   text-decoration: none;
-  font-family: "EB Garamond", Georgia, serif;
+  font-family: var(--font-heading);
   font-size: var(--name-size);
   font-weight: 600;
   line-height: 1.05;
@@ -98,7 +109,6 @@ p {
   max-width: 24ch;
   margin: 0 0 18px;
   color: var(--ink);
-  font-family: "EB Garamond", Georgia, serif;
   font-size: var(--name-size);
   font-weight: 600;
   line-height: 1.12;
@@ -153,7 +163,6 @@ p {
 .section h2 {
   margin: 0;
   color: var(--ink);
-  font-family: "EB Garamond", Georgia, serif;
   font-size: clamp(1.45rem, 3vw, 1.9rem);
   font-weight: 600;
   line-height: 1.2;
@@ -196,7 +205,6 @@ p {
 .entry-content h3 {
   margin: 0 0 8px;
   color: var(--ink);
-  font-family: "EB Garamond", Georgia, serif;
   font-size: clamp(1.28rem, 2.5vw, 1.6rem);
   font-weight: 600;
   line-height: 1.22;
