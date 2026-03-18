@@ -105,6 +105,13 @@ p {
   border-bottom: 1px solid var(--rule);
 }
 
+.page-intro-home {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.9fr);
+  gap: 20px 42px;
+  align-items: end;
+}
+
 .page-intro h1 {
   max-width: 24ch;
   margin: 0 0 18px;
@@ -113,6 +120,16 @@ p {
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: 0.005em;
+  text-wrap: balance;
+}
+
+.page-intro-home h1 {
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.page-intro-copy {
+  min-width: 0;
 }
 
 .lead,
@@ -126,6 +143,11 @@ p {
 .lead {
   max-width: 68ch;
   margin: 0;
+}
+
+.page-intro-home .lead {
+  max-width: 34ch;
+  margin-left: auto;
 }
 
 .quick-links {
@@ -263,6 +285,16 @@ p {
 
   .page-intro h1 {
     max-width: 100%;
+  }
+
+  .page-intro-home {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .page-intro-home .lead {
+    max-width: 100%;
+    margin-left: 0;
   }
 
   .section,
