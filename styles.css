@@ -246,6 +246,8 @@ p {
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .entry-links {
