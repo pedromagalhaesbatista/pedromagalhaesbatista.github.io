@@ -177,6 +177,10 @@ p {
   border-bottom: 1px solid var(--rule);
 }
 
+.section-home-about {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .section:last-of-type {
   border-bottom: 0;
   padding-bottom: 0;
