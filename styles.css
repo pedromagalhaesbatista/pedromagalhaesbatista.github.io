@@ -179,6 +179,7 @@ p {
 
 .section-home-about {
   grid-template-columns: minmax(0, 1fr);
+  padding-top: 0;
 }
 
 .section:last-of-type {
