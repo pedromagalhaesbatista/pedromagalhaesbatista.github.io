@@ -190,6 +190,31 @@ p {
   padding-top: 0;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 152px;
+  gap: 18px 30px;
+  align-items: start;
+}
+
+.about-copy {
+  min-width: 0;
+}
+
+.about-portrait {
+  margin: 2px 0 0;
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  max-width: 152px;
+  height: auto;
+  border: 1px solid var(--rule-soft);
+  border-radius: 20px;
+  box-shadow: 0 16px 30px -26px rgba(32, 34, 36, 0.45);
+}
+
 .section:last-of-type {
   border-bottom: 0;
   padding-bottom: 0;
@@ -310,6 +335,20 @@ p {
   .page-intro-home .lead {
     max-width: 100%;
     margin-left: 0;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .about-portrait {
+    order: -1;
+    justify-self: start;
+  }
+
+  .about-portrait img {
+    max-width: 132px;
   }
 
   .section,
